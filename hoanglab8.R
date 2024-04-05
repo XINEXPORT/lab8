@@ -50,6 +50,17 @@ ggplot(data=mean_ratings,aes(x=Country,y=MeanRating))+
   geom_point(aes(color=Country))
 
 #8.	Improve the appearance of the scatter plot by adding a title. The title should be your name,  and removing the labels, ticks, and text for the x and y axes.
+ggplot(data=mean_ratings,aes(x=Country,y=MeanRating))+
+  geom_point(aes(color=Country))+
+  labs(title="Christine Hoang")+
+  theme(
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        )
 
 
 
